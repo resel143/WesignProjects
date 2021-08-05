@@ -1,3 +1,6 @@
+# The Preview:
+![](https://github.com/resel143/WesignProjects/blob/main/Hotel%20Management%20System/Images/hms.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
