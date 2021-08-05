@@ -1,34 +1,20 @@
 import React from 'react';
-import Menu from './components/Menu';
-import Header from './components/Header';
-import Card from './components/Card';
-import Footer from './components/Footer';
-
+import order from './components/Order';
+import Home from './components/Home';
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";  
+import About from './components/AboutUS/About';
+import Contact from './components/Contact';
 
 const App = ()=>{
   return (
-    <div className="container-fluid" >
-      <div className="row">
-        <div className="col">
-        <Menu />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Header />
-        </div>
-      </div>
-      <div className="row mt-2">
-        <div className="col">
-          <Card />
-        </div>
-      </div>
-      <div className="row" > 
-      <div className="col"> 
-          <Footer />
-        </div>
-      </div>
-    </div>
+    <Router>
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/order" component={order}/>
+      <Route path="/about" component={About}/>
+      <Route path="/contact" component={Contact} />
+    </Switch>
+    </Router>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 function Card() {
     return (
@@ -12,7 +13,7 @@ function Card() {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}>BreakFast</h3>
+                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}><Link to="/order">Breakfast</Link></h3>
                         </div>
                     </div>
                 </div>
@@ -25,7 +26,7 @@ function Card() {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}>Lunch</h3>
+                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}><Link to="/order">Lunch</Link></h3>
                         </div>
                     </div>
                 </div>
@@ -37,7 +38,7 @@ function Card() {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}>Dinner</h3>
+                            <h3 style={{fontFamily:"Hind Vadodara, sans-serif",textAlign:"center"}}><Link to="/order">Dinner</Link></h3>
                         </div>
                     </div>
 
