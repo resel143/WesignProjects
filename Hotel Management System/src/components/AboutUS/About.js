@@ -2,15 +2,18 @@ import React from 'react';
 import Menu from '../Menu';
 import Header from '../Header';
 import Footer from '../Footer';
+import Carousel from '../Carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { render } from 'react-dom';
 
 function About() {
     return (
-        <div className="container-fluid">
+        <div className="container">
             <div className="row"><div className="col"><Menu /></div></div>
             <div className="row"><div className="col"><Header /></div></div>
             <div className="row">
-                <div className="col bg-light">
-                    <h1>Image Carousel</h1>
+                <div className="col-lg"> 
+                    <Carousel />
                 </div>
             </div>  
             <div className="row">
