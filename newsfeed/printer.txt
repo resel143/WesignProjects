@@ -1,0 +1,8 @@
+// Front End Button
+<div class="prtDiv">
+              <button onclick="prt()">Print</button>
+</div>
+// Inside script
+function prt(){
+      window.print();
+}

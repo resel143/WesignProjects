@@ -1,0 +1,5 @@
+ReWriteEngine On
+
+RewriteRule ^news/([^/]+)-([^/\.]+)$ news-details.php?nid=$2/$1
+
+
